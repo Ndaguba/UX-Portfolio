@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Me.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+    <title>Emeka | Product Designer</title>
+</head>
+<body>
+    <header>
+        <nav id="header-nav">
+            <p id="logo-text">EMEKA NDAGUBA</p>
+            <button id="header-button">Let's talk</button>
+        </nav>
+    </header>
+    <section id="hero">
+        <div id="hero-wrapper">
+            <div id="hero-top">
+                <h1 id="hero-primary">Hey there,I’m Emeka</h1>
+                <p id="hero-secondary">Product designer</p>
+                <p id="hero-tertiary">Based in Canada, with 4+ years of experience and a background in software engineering. 
+                    I love to translate complex and functional ideas into intuitive design.</p>
+    
+                    <div id="logo-wrapper">
+                        <img src="icon/linkedIn.png" id="hero-icon" alt="LinkedIn icon">
+                        <img src="icon/Github.png" id="hero-icon" alt="Github icon">
+                        <img src="icon/email.png" id="hero-icon" alt="email icon">
+                    </div>
+            </div>
+            <img src="Me.png" id="hero-image" alt="Emeka's image" title="Emeka's image">
+        </div>
+    </section>
+
+
+    
+
+    <section id="experience-wrapper-overall">
+
+        <div id="experience">
+            <div id="experience-overall">
+                <p id="experience-date">2023 - 2024</p>
+                <div id="experience-wrapper">
+                <img src="Experience-logo/Skip-logo.png" id="company-logo-2" alt="IntuitionPay logo">
+                <p id="experience-company">Skipthedishes</p>
+                <p id="experience-description">
+                    At Skipthedishes, I am responsible for the user experience design of customer-facing products. 
+                    include mobile app and website visited by over 5 million customers a day. My highlight projects include the introduction of Retail media advertising, 
+                    improvements to the Grocery menu experience as well as strategic partnership with CIBC and WestJet.
+                </p>
+                <button id="experience-button" onclick="openModal()">Learn more</button>
+                </div>
+                <p id="experience-title">Product designer</p>   
+    
+            </div>
+           
+        </div>
+        <div id="experience">
+            <div id="experience-overall">
+                <p id="experience-date">2022 - 2023</p>
+                <div id="experience-wrapper">
+                <img src="Experience-logo/IntuitionPay.png" id="company-logo" alt="IntuitionPay logo">
+                <p id="experience-company">IntuitionPay (shutdown)</p>
+                <p id="experience-description">As the first product designer, i was responsible for the design and launch of the mobile app, 
+                    Corporate website and Customer support admin portal. I also launched the corganizations design system called spaces with significantly reduced the design to development timelines by more than 50%. 
+                    I leveraged my software engineering background to contribute to the developmemnt. </p>
+                <button id="experience-button">Learn more</button>
+                </div>
+                <p id="experience-title">Founding Product designer / Head of Design</p>   
+            </div>
+        </div>
+    
+       
+    
+        <div id="experience">
+            <div id="experience-overall">
+                <p id="experience-date">2019 - 2022</p>
+                <div id="experience-wrapper">
+                <img src="Experience-logo/MWallet.png" id="company-logo-2" alt="IntuitionPay logo">
+                <p id="experience-company">M-Wallet</p>
+                <p id="experience-description">As the first product designer, i was responsible for the design and launch of the mobile app, 
+                    Corporate website and Customer support admin portal. I also launched the corganizations \`</p>
+                <button id="experience-button">NDA in place</button>
+                </div>
+                <p id="experience-title">Design Lead / Consultant</p>   
+    
+            </div>
+           
+        </div>
+    
+    
+        
+        <div id="experience">
+            <div id="experience-overall">
+                <p id="experience-date">2018 - 2022</p>
+                <div id="experience-wrapper">
+                <img src="UW.png" id="company-logo-3" alt="IntuitionPay logo">
+                <p id="experience-company">University of Winnipeg</p>
+                <p id="experience-description">BSc Applied Computer Science</p>
+                </div>
+            </div>    
+        </div>
+    
+    </section>
+    
+    <!-- The Modal -->
+    <div id="modal">
+      <div id="modal-content">
+        <span id="close">&times;</span>
+        <p id="modal-title">Password required</p>
+        <p id="modal-description">Please provide the password that was sent to you. 
+            if you require access to this content and you dont have a password, 
+            please send an email to emekandaguba.ca</p>
+        <div id="password-field">
+            <label for="password-input" id="password-input-title">Password</label>
+        <input type="password" id="password-input" placeholder="Enter your password">
+        </div>
+        <button onclick="checkPassword()" id="access-button">Access content</button>
+        <p id="error-message" style="color: rgb(255, 69, 69); display: none;">Incorrect password, please try again. or reach out for correct password</p>
+      </div>
+    </div>
+    
+    <script>
+    function openModal() {
+        document.getElementById("modal").style.display = "block";
+    }
+    
+    function closeModal() {
+        document.getElementById("modal").style.display = "none";
+        document.getElementById("error-message").style.display = "none"; // Hide error message when closing modal
+    }
+    
+    document.getElementById("close").onclick = function() {
+        closeModal();
+    }
+    
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("modal")) {
+            closeModal();
+        }
+    }
+    
+    function checkPassword() {
+        const password = document.getElementById("password-input").value;
+        if (password === "Glory") {
+            alert("Password correct!");
+            closeModal();
+            // Add your logic here for what happens after the correct password is entered
+        } else {
+            document.getElementById("error-message").style.display = "block"; // Show error message
+        }
+    }
+    </script>
+    
+    <footer id="footer-wrapper">
+        <p id="disclaimer">Designed and Developed by Emeka Ndaguba</p>
+    </footer>
+
+</body>
+</html>

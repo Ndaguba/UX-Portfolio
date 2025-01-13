@@ -1,0 +1,395 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #141313;
+    color: white;
+    font-family: "Inconsolata", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+header{
+    width: 100%;
+    background-color: #141313;
+    position: fixed;
+  
+}
+#header-button{
+    box-shadow: none;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 3000px;
+    background-color: white;
+    color: #161616;
+    font-weight: 500;
+
+}
+#header-nav{
+    width: 1375px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    align-items: center;
+}
+#logo-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+#hero{
+    background-color: #141313;
+}
+#hero-image{
+    display: flex;
+    justify-content: space-between;
+    width: 42rem;
+    margin-top: -50px;
+    background-color: transparent;
+}
+#hero-wrapper{
+    width: 1375px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 90px;
+    flex-direction: row;
+}
+#hero-icon{
+   width: 2.6rem;
+   margin-top: 23px;
+}
+#hero-primary{
+    font-size: 36px;
+    font-weight: 400;
+    color: #F4F4F4;
+    text-align: left;
+    margin-top: 120px;
+}
+#hero-secondary{
+    font-size: 18px;
+    font-weight: 500;
+    color: #8D61FD;
+    text-align: left;
+    margin-top: 12px;
+}
+#hero-tertiary{
+    font-size: 16px;
+    color: #e5e5e5;
+    font-weight: 300;
+    margin-top: 24px;
+    width: 500px;
+    margin-bottom: 12px;
+    line-height: 140%;
+    text-align: left;
+}
+#hero-top{
+    margin-top: 40px;
+    margin: 0 auto;
+    width: 1375px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#experience-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 800px;
+}
+
+#experience{
+    width: 100%;
+    background-color: #181818;
+    border-bottom: 1px solid #1D1D1D;
+
+}
+#experience-overall{
+    width: 1375px;
+    display: flex;
+    margin: 0 auto;
+    background-color: #181818;
+    gap: 90px;
+    padding: 70px 0px;
+}
+#company-logo{
+    width: 10rem;
+    background-color: #181818;
+}
+#company-logo-2{
+    width: 6rem;
+    background-color: #181818;
+}
+#experience-button{
+    width: 120px;
+    border: none;
+    box-shadow: none;
+    font-size: 15px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 500px;
+    color: black;
+    margin-top: 14px;
+    font-weight: 500; 
+}
+#experience-date{
+    width: 100px;
+    background-color: #181818;
+}
+#experience-description{
+    font-weight: 300;
+    color: #CBCBCB;
+    line-height: 140%;
+    background-color: #181818;
+}
+#experience-title{
+    text-align: right;
+    width: 355px;
+    font-weight: 300;
+    background-color: #181818;
+}
+
+#experience-company{
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    background-color: #181818;
+}
+#company-logo-3{
+    width: 8rem;
+}
+#footer-wrapper{
+    width: 100%;
+    background-color: #000000;
+}
+
+#disclaimer{
+    width: 1375px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px;
+    color: white;
+     background-color: black;
+}
+#experience-wrapper{
+    background-color: #181818;
+}
+#experience-wrapper-overall{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #181818;
+   
+}
+
+#modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.724); /* Black w/ opacity */
+}
+
+#modal-content {
+    background-color: #141313;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border-radius: 16px;
+    width: 400px; /* Could be more or less, depending on screen size */
+}
+#modal-title{
+    background-color: transparent;
+    color: white;
+    font-size: 19px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+#password-field,#password-input, #password-input-title{
+    background-color: transparent;
+    color: white;
+}
+#password-field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#modal-description{
+    font-size: 12px;
+    line-height: 18px;
+    color: #B6B6B6;
+    background-color: transparent;
+    margin-top: 14px;
+}
+
+#error-message{
+    margin-top: 14px;
+}
+
+#close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: transparent;
+    margin-top: -8px;
+}
+#password-input-title{
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+#access-button{
+    width: 100%;
+    padding: 15px;
+    background-color: #6C33FB;
+    color: white;
+    box-shadow: none;
+    border: none;
+    border-radius: 500px;
+    font-size: 14px;
+}
+#close:hover,
+#close:focus {
+    color: #8D61FD;
+    text-decoration: none;
+    cursor: pointer;
+}
+#password-input{
+    padding: 16px;
+    background-color: #181818;
+    border: 1px solid #1E1E1E;
+    border-radius: 14px;
+    color: white;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+
+    #header-nav{
+        width: 355px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        align-items: center;
+    }
+    #hero-image{
+        display: flex;
+        justify-content: space-between;
+        width: 25rem;
+        margin-top: -50px;
+    }
+    #hero-wrapper{
+        width: 355px;
+        margin: 0 auto;
+        display: flex;
+        padding-top: 90px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero-icon{
+        width: 2em;
+     }
+     
+    #hero-tertiary{
+        
+        font-size: 16px;
+        color: #e5e5e5;
+        font-weight: 300;
+        margin-top: 24px;
+        width: 355px;
+        margin-bottom: 12px;
+        line-height: 140%;
+        text-align: center;
+    }
+    #experience-overall{
+        width: 355px;
+        display: flex;
+        margin: 0 auto;
+        background-color: #181818;
+        gap: 90px;
+        padding: 70px 0px;
+    }
+    #experience-overall{
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #181818;
+    }
+    #experience-description{
+        width: 355px;
+        background-color: #181818;
+    }
+    #experience-title{
+        text-align: left;
+        background-color: #181818;
+    }
+    #disclaimer{
+        width: 355px;
+        
+    }
+    #hero-primary{
+        font-size: 28px;
+        font-weight: 500;
+    }
+    #experience-company{
+     width: 355px;
+     background-color: #181818;
+    }
+    #experience-wrapper{
+        width: 355px;
+        background-color: #181818;
+    }
+    #disclaimer {
+        width: 355px;
+    }
+
+    #experience-date, #experience-company, #experience-description, #experience-title {
+        width: 100%;
+        text-align: left;
+    }
+
+    #company-logo, #company-logo-2, #company-logo-3 {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+    }
+
+    #hero-top{
+        width: 355px;
+        align-items: center;
+    }
+
+    #hero-image {
+        width: 100%;
+        height: auto;
+        margin-top: 17px;
+    }
+
+    #logo-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #hero-icon {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+    #modal-content {
+        background-color: #141313;
+        margin: 50% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border-radius: 16px;
+        width: 355px; /* Could be more or less, depending on screen size */
+    }
+}
