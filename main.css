@@ -133,6 +133,7 @@ header{
     color: black;
     margin-top: 14px;
     font-weight: 500; 
+    text-align: center;
 }
 #experience-date{
     width: 100px;
